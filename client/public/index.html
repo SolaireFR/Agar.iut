@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>JSAÉ</title>
+
+	<link rel="icon" href="images/favicon.png" sizes="46x46">
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+</link>
+
+	<script src='/build/main.bundle.js' defer></script>
+</head>
+<body>
+<header>
+	<a href="/" class="logo">
+		<span><em>Agar. </em>  IUT</span>
+		<img class="image" src="images/favicon.png"/>
+
+	</a>
+</header>			
+	<section class="viewContainer">
+		<header class="viewTitle"></header>		
+	<div class="viewContent">
+		<article class = "accueil">
+			<section class="paragraphe">
+				<p> Hey, bienvenue sur Agar.IUT! </p>
+			</section>
+			<form class="pseudoForm">
+				<textarea type="text" class="pseudo" style="resize: none;" name="pseudo" rows="1" maxlength="15" placeholder="Pseudo"></textarea>
+				<input class="imageForm" type="number" style="resize: none;" name="imageID" rows="1" maxlength="15" min="0" max ="20" value="0"></input>
+				<img class="skin" src="images/obama.png">
+				<button class="jouer" type="submit">Jouer</button>
+				<button class="creditsButton">Crédits</button>
+				<button class="alltimeButton">Classement</button>
+			</form>
+		</article>
+		<article class="jeu">
+			<canvas class="gameCanvas" style="z-index: -10;"></canvas>
+			<div class='scoreboardDiv' style="z-index: 10;" hidden = 'hidden'>
+				<ol class = 'scoreboard' style="z-index: 10;"></ol>
+			</div>
+		</article>
+		<article class="replay" hidden="hidden">
+			<section class="paragraphe">
+				<p> Aïe, c'est game over </p>
+				<h3 class="time">Temps survécu : <p></p></h3>
+				<h3 class="eat">Blob mangé : <p></p></h3>
+			</section>
+			<form class="rejouerForm">
+				<button class="replay" type="submit" >Rejouer?</button>
+			</form>
+		</article>
+		
+		<div class="popup credits">
+			<article class="creditsArticle popupContent">
+				<button class="closeButton">X</button>
+				<div class="credits">
+					<div>
+					<h3>Léa Bedrici</h3>
+					<i>aka <b>Kyungea</b></i>
+					<p>Valorant, The Legend of Zelda : Skyward Sword, Detroit Become Human</p>
+					Pourcentage: <em>30%</em>
+					</div>
+					<div>
+					<h3><a href='https://www.youtube.com/watch?v=jeM9yRJwKl8'>Milan Delzenne</a></h3>
+					<i>aka <b>Javert</b></i>
+					<p>The Legend of Zelda : Twilight Princess, Monster Hunter Generations Ultimate, Nioh 2 </p>
+					Pourcentage: <em>30%</em>
+					</div>
+
+					<div>
+					<h3>Morgan Secretin</h3>
+					<i>aka <b>SolaireFR</b></i>
+					<p>Kerbal Space Program, Empyrion Galactic Survival, Subnautica</p>
+					Pourcentage: <em>40%</em>
+					</div>
+				</div>
+			</article>
+		</div>
+
+		<div class="popup alltime">
+			<article class="alltimeArticle popupContent">
+				<button class="alltime closeButton">X</button>
+				<div class="alltime">
+					<div class="head">
+						<i class="fas fa-crown"></i>
+						<h1>Classement</h1>
+					</div>
+					<div class="body">
+						<ol class="bestScores">
+							<li>
+								<mark>Jerry Wood</mark>
+								<small>948</small>
+							</li>
+							<li>
+								<mark>Brandon Barnes</mark>
+								<small>750</small>
+							</li>
+							<li>
+								<mark>Raymond Knight</mark>
+								<small>684</small>
+							</li>
+							<li>
+								<mark>Trevor McCormick</mark>
+								<small>335</small>
+							</li>
+							<li>
+								<mark>Andrew Fox</mark>
+								<small>296</small>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</article>
+		</div>
+	</div>
+</section>
+</body>
+</html>
